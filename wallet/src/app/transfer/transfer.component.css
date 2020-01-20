@@ -1,0 +1,101 @@
+h5{
+    margin-top: 10px;
+    /* width:200px;
+    border-width: 1px;
+    border-top: groove;
+    border-left: solid;
+    border-right: solid;
+    border-color:#bbb ; */
+}
+table {
+    width:70%;
+    height: auto;
+    /* background-image: linear-gradient(red, yellow, blue); */
+    /* outline: rgb(82, 79, 79); */
+}
+table th {
+    text-align: start;
+    width:50%;
+}
+table tr th {
+    width: 50%;
+}
+/* input[type=text] {
+    width: 165px;
+} */
+table tr td {
+    width:50%;
+}
+input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    /* border-style: solid; */
+    border-bottom: solid;
+    padding: 10px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 0.95em;
+  }
+  
+input[type="text"],
+input[type="number"] {
+    background: #fff;
+    border-color: #bbb;
+    color: #555;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+button {
+    width:200px;
+    height:40px;
+    /* margin-left:200px; */
+    margin-top: 20px;
+    background: rgb(1, 29, 51);
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+@media only screen and (max-width: 480px){
+    .container{
+        width: 100%;
+        height: auto;
+    }
+    table {
+        width:100%;
+        height: auto;
+        font-size: 12px;
+        /* background-image: linear-gradient(red, yellow, blue); */
+        /* outline: rgb(82, 79, 79); */
+    }
+    table th {
+        text-align: start;
+        width:100%;
+    }
+    table tr td {
+        width:100%;
+    }
+    input {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-width: 1px;
+        border-bottom: solid;
+        padding: 4px;
+        outline: 0;
+        font-family: inherit;
+        font-size: 0.45em;
+      }
+      
+    input[type="text"],
+    input[type="number"] {
+        background: #fff;
+        border-color: #bbb;
+        color: #555;
+    }
+    input[type=number] {
+        -moz-appearance:textfield;
+    }
+}

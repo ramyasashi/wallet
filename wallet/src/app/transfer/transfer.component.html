@@ -1,0 +1,40 @@
+<div class="container">
+    <!-- <div class="row">
+        <div class="col-sm-4">
+            <label for = "accountNum">Account Number :</label>
+            <input type = "number" id = "accountNum" [(ngModel)] = "user.accountNumber"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <label for = "ifsc">IFSC Code :</label>
+            <input type = "text" id = "ifsc"[(ngModel)] = "user.ifscCode"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <label for = "name">Account Holder Name :</label>
+            <input type = "text" id = "name"[(ngModel)] = "user.name"/>
+        </div>
+    </div> -->
+    <h5>Transfer Details</h5><hr>
+    <table>
+        <tr>
+            <th><label for="amount">Enter Amount</label></th>:&nbsp;
+            <td><input type = "number" id = "amount"[(ngModel)] = "user.amount"placeholder="Amount"/></td>
+        </tr>
+        <tr>
+            <th><label for = "accountNum">Account Number</label></th>:&nbsp;
+            <td><input type = "number" id = "accountNum" [(ngModel)] = "user.accountNumber"placeholder="Account Number"/></td>
+        </tr>
+        <tr>
+            <th><label for = "ifsc">IFSC Code</label></th>:&nbsp;
+            <td><input type = "text" id = "ifsc"[(ngModel)] = "user.ifscCode"placeholder="IFSC Code"/></td>
+        </tr>
+        <tr>
+            <th><label for = "name">Account Holder Name</label></th>:&nbsp;
+            <td><input type = "text" id = "name"[(ngModel)] = "user.name"placeholder="Beneficiary Name"/></td>
+        </tr>
+    </table>
+    <button (click)="sendMoney()">Send</button>
+</div>

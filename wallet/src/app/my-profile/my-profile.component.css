@@ -1,0 +1,40 @@
+.container .part1{
+    height: 250px;
+    width:100%;
+}
+.container .part2{
+    height:300px;
+    width:100%;
+}
+.container .part2 .profile{
+    margin-left: 250px;
+}
+.container .part2 div table tr{
+    width:auto;
+    height:50px;
+}
+.container .part2 div table tr td{
+    width:100px;
+    height:50px;
+}
+@media only screen and (max-width: 480px){
+    .container .part1{
+        height: 250px;
+        width:100%;
+    }
+    .container .part2{
+        height:300px;
+        width:100%;
+    }
+    .container .part2 .profile{
+        margin-left: 10px;
+    }
+    .container .part2 div table tr{
+        width:auto;
+        height:50px;
+    }
+    .container .part2 div table tr td{
+        width:100px;
+        height:50px;
+    }
+}

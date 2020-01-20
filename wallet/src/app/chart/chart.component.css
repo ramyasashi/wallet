@@ -1,0 +1,6 @@
+@media only screen and (max-width: 480px){
+    div{
+        width:100%;
+        height:auto;
+    }
+}

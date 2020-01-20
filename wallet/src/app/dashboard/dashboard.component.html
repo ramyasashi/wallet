@@ -1,0 +1,38 @@
+<div class="header">
+    <h1 class="logo"><i class="fa fa-bars" aria-hidden="true"(click)="openNav()"></i>Website Logo</h1>
+    <div class="logOut" (click)="logoutFun()" style="font-size: 18px; cursor: pointer;">Log out</div>
+</div>
+<div class="col-s-12 container-fluid">
+    <div class="sidenav" id="sidenav">
+        <p class="closebtn">
+            <img src="/assets/images/images.jpeg"(click)="closeNav()" width="20px"height="20px"/>
+            <!-- <i class="fa fa-window-close" aria-hidden="true"(click)="closeNav()">aa</i> -->
+        </p>
+        <ul>
+            <li [routerLink]="['/']" routerLinkActive="active-class" 
+                [routerLinkActiveOptions]="{exact:true}"
+                (click)="routingFun()">
+                <i class="fa fa-home" aria-hidden="true"></i><a>Home</a>
+            </li>
+            <li [routerLink]="['/profile']" 
+                routerLinkActive="active-class" 
+                [routerLinkActiveOptions]="{exact:true}">
+                <i class="fa fa-user" aria-hidden="true"></i><a>Profile</a>
+            </li>
+            <li [routerLink]="['/history']" 
+                routerLinkActive="active-class" 
+                [routerLinkActiveOptions]="{exact:true}">
+                <i class="fa fa-history" aria-hidden="true"></i><a>Transaction History</a>
+            </li>
+            <li [routerLink]="['/transfer']" 
+                routerLinkActive="active-class" 
+                [routerLinkActiveOptions]="{exact:true}">
+                <i class="fa fa-credit-card" aria-hidden="true"></i><a>Transfer Money</a>
+            </li>
+        </ul>
+    </div>
+    <div class = "col-s-12 container">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+<footer>@Copy Rights...@2019</footer>

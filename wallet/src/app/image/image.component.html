@@ -1,0 +1,18 @@
+<div class="container"*ngIf="userProfile">
+	<div class="row custom-wrapper"*ngFor="let user of userProfile">
+		<div class="col-s-12">
+			<form [formGroup]="registrationForm">
+				<div class="avatar-upload">
+					<div class="avatar-edit">
+						<input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" #fileInput (change)="uploadFile($event)" />
+          </div>
+          <div class="avatar-preview">
+            <div id="imagePreview" [style.backgroundImage]="'url('+ imageUrl +')'">
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-danger btn-lg btn-block" (click)="fileInput.click()">Upload Image</button>
+      </form>
+    </div>
+  </div>
+</div>

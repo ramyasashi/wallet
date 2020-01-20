@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="part1">
+        <app-image></app-image>
+    </div>
+    <div class="part2">
+      <div class="profile"*ngIf="profileData">
+        <table *ngFor="let user of profileData">
+            <tr>
+                <th style="width:200px">Name</th>
+                <th style="width:20px;">:</th>
+                <td>{{user.name}}</td>
+            </tr>
+            <tr>
+                <th style="width:200px">Email Id</th>
+                <th style="width:20px;">:</th>
+                <td>{{user.email}}</td>
+            </tr>
+            <tr>
+                <th style="width:200px">Contact Number</th>
+                <th style="width:20px;">:</th>
+                <td>{{user.mobileNumber}}</td>
+            </tr>
+        </table>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div *ngIf = "userDetails">
+    <fieldset> 
+        <legend>History Details</legend>
+        <div *ngFor = "let user of userDetails">
+            <p>Account Holder Name : {{user.name}}</p>
+            <p>Amount Transfered : {{user.amount}}</p>
+            <p>IFSC Code: {{user.ifscCode}}</p>
+            <p>Date : {{user.date | date:'mediumDate'}}</p>
+            <hr>
+        </div>
+    </fieldset> 
+</div>
